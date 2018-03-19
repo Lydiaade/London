@@ -1,0 +1,28 @@
+body{
+  background-size: auto ;
+  background-image: url('../Images/things/things.jpg');
+}
+@font-face {
+  font-family: myfont;
+  src: url('../fonts/Coneria.ttf');
+}
+@font-face {
+  font-family: myfont1;
+  src: url('../fonts/bahnschrift.ttf');
+}
+#london img{
+  position: relative;
+  width: 800px;
+  height: 100px;
+  opacity: 0.75;
+}
+.navbar-inverse{
+  opacity: 0.7;
+  border: 0;
+  font-size: 20px;
+  font-family: myfont1;
+}
+.nav navbar-nav{
+  font-size: 20px;
+  font-family: myfont;
+}

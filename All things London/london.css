@@ -1,0 +1,128 @@
+body{
+  background-color: #080808;
+}
+@font-face {
+  font-family: myfont;
+  src: url('../fonts/Coneria.ttf');
+}
+@font-face {
+  font-family: myfont1;
+  src: url('../fonts/bahnschrift.ttf');
+}
+.fullBackground {
+  background-position: center;
+  background-attachment: fixed;
+  background-size: auto;
+  position: absolute;
+  opacity: 0.4
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#london img{
+  position: relative;
+  width: 800px;
+  height: 100px;
+  opacity: 0.75;
+}
+.navbar-inverse{
+  opacity: 0.7;
+  border: 0;
+  font-size: 20px;
+  font-family: myfont1;
+}
+.nav navbar-nav{
+  font-size: 20px;
+  font-family: myfont;
+}
+.main{
+  background-size: contain;
+  position: absolute;
+  width: 90%;
+  height: 60%;
+  margin-left: 70px;
+  margin-top: 30px;
+  background-color: rgba(0,0,0,0.8);
+  align-content: center;
+  border-radius: 15px;
+}
+.jumbotron{
+  background-color: rgba(0,0,0,0);
+  align-content: center;
+}
+.test1{
+  color: white;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.test1 h1{
+  font-family: myfont;
+  font-size: 40px
+}
+.test1 p{
+  font-family: myfont1;
+  font-size: 25px;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    position: absolute;
+    margin-bottom: 30px;
+    border-radius: 50px;
+    top: 122%;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    right: 2%;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    right: 6%;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+  right: 10%;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+  right: 14%;
+}
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  right: 18%;
+}
+.details{
+  position: absolute;
+  top: 105%;
+  margin-left:10px;
+  width: 900px;
+}
+.details h3{
+  color: white;
+  font-size: 30px;
+  font-family: myfont;
+}
+.details p{
+  color: white;
+  font-size: 18px;
+  font-family: myfont1;
+}
+h5{
+  position: absolute;
+  font-family: myfont1;
+  font-size: 15px;
+  color: gray;
+}

@@ -1,0 +1,21 @@
+<head>
+  <meta charset="UTF-8">
+  <link href='../css/bootstrap.css' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="Welcome.css">
+</head>
+<body>
+  <script src="../src/jquery-3.3.1.min.js"></script>
+  <script src="../src/fullclip.js"></script>
+    <div class="fullBackground"></div>
+
+    <script>
+    $('.fullBackground').fullClip({
+      images: ['../Images/backing/b1.jpg', '../Images/backing/b4.jpg','../Images/backing/b8.jpg','../Images/backing/b9.jpg'],
+      transitionTime: 2000,
+      wait: 10000
+    });
+    </script>
+      <h1 id='welcome'>all things</h1>
+      <h2 id='welcome2'>London</h2>
+    <button class='button'><a href="../All things London/London.html">Enter website...</a></button>
+</body>

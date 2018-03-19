@@ -1,0 +1,62 @@
+
+.fullBackground {
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@font-face {
+  font-family: myfont;
+  src: url('../fonts/Coneria.ttf');
+}
+@font-face {
+  font-family: myfont1;
+  src: url('../fonts/bahnschrift.ttf');
+}
+#welcome{
+  font-size: 80pt;
+  text-transform: uppercase;
+  text-shadow: 20px;
+  font-weight: bold;
+  font-family: myfont1;
+  color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+#welcome2{
+  font-size: 150pt;
+  text-transform: uppercase;
+  text-shadow: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.button {
+  background-color: white;
+  border: black 2px;
+  border-radius: 20px;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  font-family: myfont;
+  font-size: 30px;
+  position:absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 0.6;
+  transition: 0.3s;
+  width: 25%;
+}
+.button:hover {opacity: 1}

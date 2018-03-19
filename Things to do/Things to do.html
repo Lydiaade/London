@@ -1,0 +1,144 @@
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Latest compiled Bootstrap JavaScript -->
+  <script src=" http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js "></script>
+
+  <link href='../css/bootstrap.css' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="things.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div id='london'><a href="../Welcome to London/Welcome.html">
+    <img src='../Images/logo.png'></a>
+  </div>
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="../All things London/London.html">Home</a></li>
+            <li class="active"><a href="../Things to do/Things to do.html">Things to do</a></li>
+            <li><a href="../Transport/Transport.html">Transport</a></li>
+            <li><a href="../All things London/London.html#link1">Contact Us</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <!--<li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+<div class="container">
+<div class="thingstodo">
+  <h1>Things to do...</h1>
+  <p>With so many things to do or see in London, we have listed a few things that are worth enjoying whilst in London like the main attractions, museums, etc.</p>
+</div>
+</div>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <a href="#attractions"><img src="../Images/things/bucking.jpg" style="width:100%">
+    <div class="text">Attractions</div></a>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <a href="#Parks"><img src="../Images/things/Kew Garden.jpg" style="width:100%">
+    <div class="text">Parks</div></a>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <a href="#Museums"><img src="../Images/things/museum.jpg" style="width:100%">
+    <div class="text">Galleries and Museums</div></a>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <a href="#Theatres"><img src="../Images/things/lion king.jpg" style="width:100%">
+    <div class="text">Theatres</div></a>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <a href="#Seasonal"><img src="../Images/things/christmas.JPG" style="width:100%">
+    <div class="text">Seasonal Attractions</div></a>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+</script>
+
+<div class="container info">
+<div class="container individual">
+  <a name="attractions"><h2>Attractions</h2></a>
+  <p>One of the main things that attracts many tourists to London are the main attractions. These include the London eye, Big Ben and London Bridge. There are also many more like the stadiums all over London, including the Olympic stadium built specifically for the London 2012 Olympics. Let's not forget the royalty living here in London; the queen is not too far away with Buckingham Palace here in central London. Though it may cost a few pounds (UK's currency) to visit some of these attractions, it would definetly be worth it. Or, another great idea, look at it from the outside and take a few pictures. </p>
+</div>
+<div class="container individual">
+  <a name="Parks"><h2>Parks</h2></a>
+  <p> We also have the 8 royal parks, such as Hyde Park, Greenwich park and many others spread around London. These are usually free to access, so every once in a while when we do get that sunny day, why not enjoy the greenery by having yourself a lovely picnic. There also other gardens such as kew gardens, which also charges but is definetly worth seeing.</p>
+</div>
+<div class="container individual">
+  <a name="Museums"><h2>Galleries and Museums</h2></a>
+  <p> Let's not forget history, you also have the oppurtunity to visit some of the greatest galleries and museums in London, such as the British Museum, Horniman Museum, Tate Gallery and the National Art Gallery. Most of these are free to access, especially as an art lover or historian, one can really enjoy the lovely selection available</p>
+</div>
+<div class="container individual">
+  <a name="Theatres"><h2>Theatres</h2></a>
+  <p> We also house some very spectacular productions, so why not visit the London theatres and watch shows like Lion King, Wicked and Matilda (amongst many). Though at a cost, it would defiently be worth the wait and money. </p>
+</div>
+<div class="container individual">
+  <a name="Seasonal"><h2>Seasonal Attractions</h2></a>
+  <p> Instead of just enjoying the great attractions of London, why not see them at their peaks? During winter London lights up, we are able to experience a christmas themed London, with a glowing London eye and Tower bridge but also shop with beautiful ornaments in the air in Oxford Street. Not only in the winter but in the summer some of the the royal parks are able to host some world class events and concerts like Wireless!! </p>
+</div>
+</div>
+</body>
